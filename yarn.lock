@@ -205,6 +205,16 @@
   dependencies:
     tslib "^2.4.0"
 
+"@trpc/client@^10.0.0-proxy-beta.2":
+  version "10.0.0-proxy-beta.2"
+  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-10.0.0-proxy-beta.2.tgz#54a924e2a872261a1d4b2a404b80e50d562b5c9e"
+  integrity sha512-29jaUrC57ZAWLf4mlbgdmC3XBVCnuzrlICW/FM65+JbhTlWwFMlbCqnpslstb2VIqLyeP+GH2S5DW+Av1eVSVw==
+
+"@trpc/server@^10.0.0-proxy-beta.2":
+  version "10.0.0-proxy-beta.2"
+  resolved "https://registry.yarnpkg.com/@trpc/server/-/server-10.0.0-proxy-beta.2.tgz#21dae9d3617a27562fdc3bab84d4502301835193"
+  integrity sha512-SnPadN72l6OHN3NZvSBJZDr+hXGYKVNU+KtSqV86CbbTXGvdrgYusvrJPfF4VQqSLj6DSo98zirx07Qk+hVlpA==
+
 "@types/json-schema@^7.0.9":
   version "7.0.11"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
@@ -2327,3 +2337,8 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+zod@^3.19.1:
+  version "3.19.1"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.19.1.tgz#112f074a97b50bfc4772d4ad1576814bd8ac4473"
+  integrity sha512-LYjZsEDhCdYET9ikFu6dVPGp2YH9DegXjdJToSzD9rO6fy4qiRYFoyEYwps88OseJlPyl2NOe2iJuhEhL7IpEA==
