@@ -3,12 +3,13 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { signIn, signOut, useSession } from 'next-auth/react';
 import Card from '@components/Card';
+import useGreeting from '@lib/greetings/useGreeting';
 
 const Home: NextPage = () => {
-  const { data, status } = useSession();
-  const message = data?.user
-    ? `${data.user.email}, welcome to `
-    : 'Welcome to ';
+  const { status, data } = useSession();
+  const { data: greeting } = useGreeting({
+    name: data?.user?.email || '',
+  });
   return (
     <div className="min-h-screen flex flex-col justify-between dark:bg-black dark:text-white">
       <Head>
@@ -17,14 +18,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="py-16 px-0 flex flex-col justify-center items-center">
-        <h1 className="m-0 text-6xl text-center">
-          {message}
-          <a
-            className="text-blue-400 hover:underline focus:underline active:underline"
-            href="https://nextjs.org"
-          >
-            Next.js!
-          </a>
+        <h1 className="m-0 text-6xl text-center text-blue-400">
+          {greeting ? greeting.greeting : 'Hello'}
         </h1>
 
         <p className="text-center my-16 text-2xl">
