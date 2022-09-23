@@ -1,0 +1,40 @@
+name: Shared app workflow
+on:
+  workflow_call:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/app-setup
+      - name: Lint
+        run: cd app && yarn lint
+
+  unitTest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/app-setup
+      - name: Unit Test
+        run: cd app && yarn run test:unit
+
+  integrationTest:
+      runs-on: ubuntu-latest
+      env:
+        DATABASE_URL: "postgresql://postgres:postgres@localhost:5432/tests"
+        POSTGRES_INTEGRATIONS_PORT: 5432
+
+      services:
+        postgres:
+          image: postgres
+          env:
+            POSTGRES_PASSWORD: postgres
+          ports:
+            - 5432:5432
+
+      steps:
+        - uses: actions/checkout@v2
+        - uses: ./.github/actions/app-setup
+        - name: Integration Test
+          run: cd app && yarn run test:integration   
