@@ -4,7 +4,7 @@ runs:
   steps:
     - uses: actions/setup-node@v2.4.1
       with:
-        node-version: "16"
+        node-version: '16'
 
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path
@@ -20,5 +20,5 @@ runs:
           ${{ runner.os }}-yarn-
 
     - name: Install
-      run: cd app && yarn
+      run: yarn
       shell: bash
