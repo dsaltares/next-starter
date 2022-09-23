@@ -11,7 +11,10 @@
     "prettier:format": "prettier -w .",
     "docker:up": "docker compose up -d",
     "docker:down": "docker compose down",
-    "db:migrate": "prisma migrate dev"
+    "db:migrate": "prisma migrate dev",
+    "test": "yarn test:unit && yarn test:integration",
+    "test:unit": "jest -c jest.unit.config.js",
+    "test:integration": "dotenv -e .env.tests prisma migrate dev && jest -c jest.integration.config.js "
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.4",
@@ -29,17 +32,23 @@
     "zod": "^3.19.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "@types/node": "18.7.18",
     "@types/react": "18.0.20",
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
     "autoprefixer": "^10.4.11",
+    "comment-json": "^4.2.3",
+    "dotenv-cli": "^6.0.0",
     "eslint": "^8.23.1",
     "eslint-config-next": "^12.3.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.5.1",
     "eslint-plugin-import": "^2.26.0",
+    "jest": "^29.0.3",
+    "jest-environment-jsdom": "^29.0.3",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
     "prisma": "^4.3.1",
