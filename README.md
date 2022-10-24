@@ -21,7 +21,7 @@ This template wires a bunch of technologies together to facilitate a great user 
 - [🔒 NextAuth.js](https://next-auth.js.org/) - trivial authentication for Next.js apps while owning all of your data.
 - [📙 Prisma](https://www.prisma.io/) - the best ORM for Typescript. This template assumes you'll be using PostgreSQL.
 - [🐳 Docker](https://www.docker.com/) - 100% offline development is enabled by a local PostgreSQL and email server.
-- [🃏 Jest](https://jestjs.io/) - unit tests with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) and integration tests that can talk to an ephemeral PostgreSQL database. Coverage is automatically collected.
+- [🃏 Jest](https://jestjs.io/) - unit tests with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) and [msw](https://mswjs.io/). Integration tests that can talk to an ephemeral PostgreSQL database. Coverage is automatically collected.
 - 🚢 [Github Actions](https://github.com/features/actions) and [Vercel](https://vercel.com/) - linting, testing; and full preview and production deployments.
 - [🌳 Dependabot](https://github.com/dependabot) - to keep all your dependencies up to date.
 
