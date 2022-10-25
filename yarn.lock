@@ -885,15 +885,15 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
-"@trpc/client@^10.0.0-proxy-beta.26":
-  version "10.0.0-proxy-beta.26"
-  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-10.0.0-proxy-beta.26.tgz#b8df0b7e5c75bef5021e7813da7c0f1df0a93d27"
-  integrity sha512-NTAqTtMCsB5DneoseK/oFYA9YkcIXHuYp1zojnhNpNA+HFzFvkDUHsKNmaPwd5c/KxLr7nP/jQvRzvVuZbgBng==
+"@trpc/client@^10.0.0-rc.0":
+  version "10.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-10.0.0-rc.0.tgz#ac47c7ed42978f14a11d0b48e2b29555a7482aa7"
+  integrity sha512-JqOE1GRwao1mp3UtY2AVB8iIMMryRMSwAJWZ/wMCI0UCuQn+Px6OSQx5OLvs9Yh8DR6QLJmvDOrx6/OT3fG/iQ==
 
-"@trpc/server@^10.0.0-proxy-beta.26":
-  version "10.0.0-proxy-beta.26"
-  resolved "https://registry.yarnpkg.com/@trpc/server/-/server-10.0.0-proxy-beta.26.tgz#0e274b6b40055490826df92b538bc5db662147c5"
-  integrity sha512-XMpsQnH5s5Mn7CbRUMq2qT8TlHWNSygAizmpKnMhk3JDuLtqQNfxqGG41JzXiKNUcDrfcWt+MEyEa18sEjLYiA==
+"@trpc/server@^10.0.0-rc.0":
+  version "10.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@trpc/server/-/server-10.0.0-rc.0.tgz#5b32ace541beae0c9acff9b35310699f22297296"
+  integrity sha512-rLVnHrhrTM4xBheIfqtH1QojgWRCOSbJRw7wr6SVB3yRjCCsU+AZnSrhchMLuDW7Q59r+x3rpH3Wd6BlkydWWg==
 
 "@types/aria-query@^4.2.0":
   version "4.2.2"
