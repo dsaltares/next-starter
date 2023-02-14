@@ -23,7 +23,7 @@
     "@tanstack/react-query-devtools": "^4.19.0",
     "@trpc/client": "^10.10.0",
     "@trpc/server": "^10.10.0",
-    "immer": "^9.0.17",
+    "immer": "^9.0.19",
     "next": "^13.1.6",
     "next-auth": "^4.18.8",
     "nodemailer": "^6.9.1",
